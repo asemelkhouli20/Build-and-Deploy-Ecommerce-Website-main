@@ -11,17 +11,17 @@
   position: relative;
 }
 #banner3 .banner-box:nth-child(1) {
-  background-image: url(/img/banner/b7.jpg);
+  background-image: url("/img/banner/b7.jpg");
   color: #feffdf;
 }
 
 #banner3 .banner-box:nth-child(2) {
-  background-image: url(/img/banner/b4.jpg);
+  background-image: url("/img/banner/b4.jpg");
   color: #fbff84;
 }
 
 #banner3 .banner-box:nth-child(3) {
-  background-image: url(/img/banner/b18.jpg);
+  background-image: url("/img/banner/b18.jpg");
   color: #f6fe07;
 }
 

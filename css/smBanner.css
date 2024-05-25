@@ -17,16 +17,13 @@
   position: relative;
 }
 #sm-banner .banner-box:nth-child(1) {
-  background-image: url(/img/banner/b17.jpg);
+  background-image: url("/img/banner/b17.jpg");
 }
 
 #sm-banner .banner-box:nth-child(2) {
-  background-image: url(/img/banner/b10.jpg);
+  background-image: url("/img/banner/b10.jpg");
 }
 
-#sm-banner .banner-box:nth-child(3) {
-  background-image: url(/img/banner/b1.jpg);
-}
 #sm-banner h4 {
   color: #fff;
   font-size: 20px;
