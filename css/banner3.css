@@ -9,6 +9,7 @@
   align-items: flex-start;
   transition: 0.3s ease;
   position: relative;
+  background-color: black;
 }
 #banner3 .banner-box:nth-child(1) {
   background-image: url("/img/banner/b7.jpg");
