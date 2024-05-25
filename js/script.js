@@ -16,7 +16,7 @@ function setProduct(id,array) {
     }
     var item = `
       <div class="pro">
-        <img src="/img/products/${item.image}.jpg" />
+        <img src="img/products/${item.image}.jpg" />
         <div class="des">
           <span>${item.brand}</span>
           <h5>${item.title}</h5>
