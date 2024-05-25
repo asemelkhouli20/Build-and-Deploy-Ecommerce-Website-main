@@ -1,0 +1,43 @@
+
+#banner3 .banner-box {
+  min-width: 30%;
+  height: 30vh;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  transition: 0.3s ease;
+  position: relative;
+}
+#banner3 .banner-box:nth-child(1) {
+  background-image: url(/img/banner/b7.jpg);
+  color: #feffdf;
+}
+
+#banner3 .banner-box:nth-child(2) {
+  background-image: url(/img/banner/b4.jpg);
+  color: #fbff84;
+}
+
+#banner3 .banner-box:nth-child(3) {
+  background-image: url(/img/banner/b18.jpg);
+  color: #f6fe07;
+}
+
+#banner3 h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#banner3 h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}

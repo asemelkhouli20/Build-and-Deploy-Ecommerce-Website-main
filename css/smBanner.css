@@ -1,0 +1,56 @@
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  min-width: 580px;
+  height: 50vh;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 30px;
+  align-items: flex-start;
+
+  transition: 0.3s ease;
+  position: relative;
+}
+#sm-banner .banner-box:nth-child(1) {
+  background-image: url(/img/banner/b17.jpg);
+}
+
+#sm-banner .banner-box:nth-child(2) {
+  background-image: url(/img/banner/b10.jpg);
+}
+
+#sm-banner .banner-box:nth-child(3) {
+  background-image: url(/img/banner/b1.jpg);
+}
+#sm-banner h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+#sm-banner span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button.white {
+  color: #fff;
+  background-color: #088178;
+  border: 0px solid;
+  outline: none;
+}
+#sm-banner .banner-box:hover {
+  transition: all 0.5s;
+  transform: scale(1.01);
+}
