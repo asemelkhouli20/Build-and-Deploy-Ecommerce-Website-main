@@ -5,6 +5,8 @@ import { getHead } from "./header.js";
 import { footerContent } from "./footer.js";
 import { newslettersContent } from "./newsletters.js";
 
+import { getBlogs } from "./blogLoad.js";
+
 function setFooter() {
   const footer = document.getElementById("footer");
   const newsletters = document.getElementById("newsletters");
@@ -15,6 +17,10 @@ function setFooter() {
 function setHead(active) {
   const header = document.getElementById("header");
   header.innerHTML = getHead(active);
+}
+function setBlogs(){
+const blog = document.getElementById("blog");
+blog.innerHTML = getBlogs();
 }
 
 function setProduct(id) {
@@ -31,7 +37,7 @@ function setProduct(id) {
       ratingHtml += '<i class="fas fa-star"></i>';
     }
 
-    var item = `
+    var value = `
       <div class="pro" onclick="
        window.location.href = 'sproduct.html?id=${item.image}';
       ">
@@ -48,7 +54,7 @@ function setProduct(id) {
       </div>
 
     `;
-    htmlCode += item;
+    htmlCode += value;
   }
   products.innerHTML = htmlCode;
 }
@@ -100,6 +106,7 @@ export function setContact() {
 export function setBlog() {
   setHead("activeBlog");
   setFooter();
+  setBlogs();
 }
 
 export function setAbout() {
