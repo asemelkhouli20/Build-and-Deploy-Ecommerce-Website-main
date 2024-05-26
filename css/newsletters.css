@@ -1,4 +1,3 @@
-
 #newsletters {
   display: flex;
   justify-content: space-between;
@@ -10,11 +9,10 @@
   background-color: #041e42;
 }
 #newsletters .form {
-display: flex;
-
-width: 40%;
+  display: flex;
+  width: 40%;
 }
-#newsletters  h4 {
+#newsletters h4 {
   font-size: 22px;
   font-weight: 700;
   color: #fff;
@@ -44,6 +42,17 @@ width: 40%;
   background-color: #088178;
   color: #fff;
   white-space: nowrap;
-   border-top-left-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+@media (max-width: 799px) {
+  #newsletters .form {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  #newsletters{
+    padding: 40px 20px;
+  }
 }

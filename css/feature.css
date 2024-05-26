@@ -1,4 +1,3 @@
-
 /* Feature */
 #feature {
   display: flex;
@@ -28,9 +27,10 @@
   border-radius: 4px;
   color: #088178;
 }
-#feature .fe-box image {
+#feature .fe-box img {
   width: 100%;
   margin-bottom: 10px;
+
 }
 #feature .fe-box:nth-child(1) h6 {
   background-color: #fddde4;
@@ -49,4 +49,18 @@
 }
 #feature .fe-box:nth-child(6) h6 {
   background-color: #fff2e5;
+}
+@media (max-width: 1250px) {
+  #feature {
+    justify-content: center;
+  }
+  #feature .fe-box{
+    margin: 15px;
+  }
+}
+@media (max-width: 500px) {
+  #feature .fe-box{
+    width: 145px;
+    margin: 0 15px 15px 0;
+  }
 }

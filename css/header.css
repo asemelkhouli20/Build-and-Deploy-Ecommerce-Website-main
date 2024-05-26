@@ -12,3 +12,8 @@
   top: 0;
   left: 0;
 }
+@media (max-width: 500px) {
+  #header {
+     padding: 10px 30px;
+  }
+}

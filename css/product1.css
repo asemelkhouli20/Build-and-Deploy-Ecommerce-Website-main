@@ -1,4 +1,3 @@
-
 #product1 {
   text-align: center;
 }
@@ -68,6 +67,18 @@
   right: 10px;
 }
 
+@media (max-width: 799px) {
+  #product1 .pro-container {
+    justify-content: center;
+  }
+  #product1 .pro {
+    margin: 15px;
+  }
+}
 
+@media (max-width: 640px) {
+  #product1 .pro {
+    width: 100%;
+  }
 
-
+}

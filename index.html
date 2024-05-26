@@ -7,7 +7,8 @@
     <title>Tech2etc E-commerce Tutorial</title>
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/feature.css" />
@@ -17,9 +18,8 @@
     <link rel="stylesheet" href="css/product1.css" />
     <link rel="stylesheet" href="css/banner3.css" />
     <link rel="stylesheet" href="css/smBanner.css" />
-        <link rel="stylesheet" href="css/newsletters.css" />
+    <link rel="stylesheet" href="css/newsletters.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
   </head>
 
   <body>
@@ -33,10 +33,15 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li>
+          <li id="lg-bug">
             <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
           </li>
+          <i id="close" class="far fa-times"></i>
         </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
     <!---  Hero  --->
@@ -48,32 +53,7 @@
       <button>Shop Now</button>
     </section>
     <!--  Feature -->
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img src="img/features/f1.png" alt="Free Shipping img" />
-        <h6>Free Shipping</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f2.png" alt="Online Order img" />
-        <h6>Online Order</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f3.png" alt="Save Money img" />
-        <h6>Save Money</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f4.png" alt="Promotions img" />
-        <h6>Promotions</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f5.png" alt="Happy Spell img" />
-        <h6>Happy Spell</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f6.png" alt="F24/7 Support img" />
-        <h6>F24/7 Support</h6>
-      </div>
-    </section>
+    <section id="feature" class="section-p1"></section>
     <!--  Product1 Feature Product  -->
     <section id="product1" class="section-p1">
       <h2>Featured Products</h2>
@@ -184,10 +164,12 @@
         <p>Secured Payment Gateways</p>
         <img src="img/pay/pay.png" alt="" />
       </div>
-     <div class="copyright">
-<p>® 2021, Tech2 etc - HTML CSS E-commerce Template</p> </div>
+      <div class="copyright">
+        <p>® 2021, Tech2 etc - HTML CSS E-commerce Template</p>
+      </div>
     </footer>
-     
+
     <script type="module" src="js/script.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

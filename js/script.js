@@ -1,13 +1,13 @@
 // Script for navigation bar
 import { newProduct, featureProduct } from "./products.js";
+import { featuresItem } from "./features.js";
 
 setProduct("products", featureProduct);
-setProduct("NewProducts",newProduct);
-
-
-function setProduct(id,array) {
+setProduct("NewProducts", newProduct);
+setFeatures();
+function setProduct(id, array) {
   var htmlCode = "";
-  var products = document.getElementById(id);
+  const products = document.getElementById(id);
   for (let i = 0; i < array.length; i++) {
     var item = array[i];
     var ratingHtml = "";
@@ -31,4 +31,19 @@ function setProduct(id,array) {
     htmlCode += item;
   }
   products.innerHTML = htmlCode;
+}
+
+function setFeatures() {
+  const feature = document.getElementById("feature");
+  var htmlCode = "";
+  for (let i = 0; i < featuresItem.length; i++) {
+        var item = featuresItem[i];
+    htmlCode += `
+      <div class="fe-box">
+        <img src="img/features/${item.image}" alt="${item.title} img" />
+        <h6>${item.title}</h6>
+      </div>
+      `;
+  }
+  feature.innerHTML = htmlCode
 }

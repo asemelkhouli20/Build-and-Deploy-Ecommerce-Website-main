@@ -50,7 +50,15 @@ footer .install img {
   margin: 10px 0 15px 0;
 }
 
-footer .copyright{
+footer .copyright {
   text-align: center;
   width: 100%;
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .install {
+    align-items: center;
+  }
 }
