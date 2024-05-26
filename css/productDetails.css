@@ -37,7 +37,7 @@
 .single-pro-details h6,
 .single-pro-details h4,
 .single-pro-details h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: start;
 }
 .single-pro-details input {
@@ -82,11 +82,19 @@
   }
 }
 @media (max-width: 600px) {
-  .shop-custom {
+  .shop-custom{
     flex-direction: column;
+     width: 100%;
+  }
+  .single-pro-details select {
+     width: 100%;
   }
   .single-pro-details button {
     margin: 20px 0;
   }
+
+.single-pro-details input {
+  width: 80px;
+}
  
 }
