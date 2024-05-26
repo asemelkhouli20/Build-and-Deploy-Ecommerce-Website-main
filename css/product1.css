@@ -67,12 +67,12 @@
   right: 10px;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1000px) {
   #product1 .pro-container {
     justify-content: center;
   }
   #product1 .pro {
-    margin: 15px;
+    margin: 5px;
   }
 }
 

@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech2etc E-commerce Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/product1.css" />
+    <link rel="stylesheet" href="css/newsletters.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <body>
+    <!---  Header  --->
+    <section id="header"></section>
+    <section id="page_header">
+      <h2>#stay_home</h2>
+      <p>Save more with coupons & up to 70% off!</p>
+    </section>
+    <section id="product1" class="section-p1">
+      <div class="pro-container" id="products"></div>
+      <div class="pro-container" id="NewProducts"></div>
+    </section>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <section id="pagination" class="section-p1 section-m1">
+      <a href="#"><i class="fal fa-long-arrow-alt-left"></i></a>
+      <a href="#" class="number select">1</a>
+      <a href="#" class="number">2</a>
+      <a href="#" class="number">3</a>
+      <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    </section>
 
-    <body>
+    <!--  News Letters  -->
+    <section id="newsletters" class="section-p1 section-m1"></section>
 
-        <script src="script.js"></script>
-    </body>
+    <footer id="footer" class="section-p1"></footer>
 
+    <script type="module" src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="module">
+      import { setShop } from "./js/script.js";
+      setShop();
+    </script>
+  </body>
 </html>
