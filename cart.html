@@ -20,16 +20,79 @@
     <link rel="stylesheet" href="css/smBanner.css" />
     <link rel="stylesheet" href="css/newsletters.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/cart.css" />
   </head>
 
   <body>
     <!---  Header  --->
     <section id="header"></section>
+    <section id="page_header" class="page_header_contact">
+      <h2>#cart</h2>
+      <p>Add your coupon and SAVE Up to 70%!</p>
+    </section>
+    <section id="cart" class="section-p1">
+      <table id="cart-table" width="100%">
+        <thead>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </thead>
 
+        <tr>
+          <td>
+            <a href="#">
+              <i class="far fa-times-circle"></i>
+            </a>
+          </td>
+          <td>
+            <img src="css/img/products/f1.jpg" />
+          </td>
+          <td>Carton Astronaut T-shirt</td>
+          <td>$120</td>
+          <td>
+            <input type="number" value="1" />
+          </td>
+          <td>$120</td>
+        </tr>
+      </table>
+    </section>
 
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Your Coupon" />
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+          <tr>
+            <td>Cart Sub Total</td>
+            <td>$355</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$355</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+      </div>
+    </section>
     <section id="newsletters" class="section-p1 section-m1"></section>
     <footer id="footer" class="section-p1"></footer>
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/cart.js"></script>
+
     <script src="js/menu.js"></script>
     <script type="module">
       import { setCart } from "./js/script.js";
