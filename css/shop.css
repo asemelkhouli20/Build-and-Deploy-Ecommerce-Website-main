@@ -35,6 +35,7 @@
 .page_header_blog {
   background-image: url("img/banner/b19.jpg");
 }
-.page_header_about {
+.page_header_about,
+.page_header_contact  {
   background-image: url("img/about/banner.png");
 }
