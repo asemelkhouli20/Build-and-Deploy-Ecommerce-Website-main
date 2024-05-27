@@ -112,6 +112,7 @@ export function setBlog() {
 export function setAbout() {
   setHead("activeAbout");
   setFooter();
+  setFeatures();
 }
 
 export function setCart() {
